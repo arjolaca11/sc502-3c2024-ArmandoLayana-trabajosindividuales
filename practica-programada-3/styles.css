@@ -1,0 +1,334 @@
+/* ===== Base ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Tahoma, sans-serif;
+}
+
+body {
+  background-color: #f2f5f9;
+  color: #1f2933;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  line-height: 1.25;
+}
+
+/* ===== Encabezado y menu ===== */
+.encabezado {
+  background-color: #1e4d8c;
+  color: #ffffff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #12263f;
+}
+
+.logo {
+  color: #ffffff;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+}
+
+.menu > li {
+  margin-left: 25px;
+}
+
+.menu a {
+  color: #ffffff;
+  text-decoration: none;
+  padding-bottom: 4px;
+}
+
+.menu a:hover {
+  color: #cfe0f5;
+  border-bottom: 2px solid #cfe0f5;
+}
+
+/* ===== Banner ===== */
+.banner {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.banner h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.banner p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+/* ===== Boton ===== */
+.boton {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #1e4d8c;
+  font-weight: bold;
+  padding: 12px 26px;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.boton:hover {
+  background-color: #cfe0f5;
+}
+
+/* ===== Secciones ===== */
+.servicios,
+.reservacion {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.servicios h2,
+.reservacion h2 {
+  color: #1e4d8c;
+  margin-bottom: 8px;
+}
+
+.intro {
+  margin-bottom: 30px;
+}
+
+/* ===== Servicios (tarjetas) ===== */
+.tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.tarjetas > .tarjeta {
+  background-color: #ffffff;
+  width: 280px;
+  margin: 12px;
+  padding: 25px;
+  border-top: 5px solid #1e4d8c;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  text-align: left;
+}
+
+.tarjeta:hover {
+  background-color: #e8eff8;
+}
+
+.tarjeta h3 {
+  color: #1e4d8c;
+  margin-bottom: 8px;
+}
+
+/* ===== Doctor ===== */
+.doctor {
+  display: flex;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-left: 6px solid #3b82c4;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.avatar {
+  flex-shrink: 0;
+  width: 120px;
+  height: 120px;
+  margin-right: 30px;
+  background-color: #1e4d8c;
+  color: #ffffff;
+  font-size: 40px;
+  text-align: center;
+  line-height: 120px;
+  border-radius: 50%;
+}
+
+.doctor-info h2 {
+  color: #12263f;
+}
+
+.doctor-info h3 {
+  color: #1e4d8c;
+  margin-bottom: 10px;
+}
+
+.doctor-info h3 + p {
+  margin-bottom: 8px;
+}
+
+/* ===== Formulario ===== */
+.formulario {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.formulario fieldset {
+  background-color: #ffffff;
+  padding: 25px;
+  border: 2px solid #1e4d8c;
+  border-radius: 10px;
+}
+
+.formulario legend {
+  padding: 0 10px;
+  color: #1e4d8c;
+  font-weight: bold;
+}
+
+.campo {
+  flex: 1;
+  margin-bottom: 18px;
+}
+
+.campo label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.campo input,
+.campo textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #b4c3d6;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+  outline: none;
+  border-color: #3b82c4;
+}
+
+.fila {
+  display: flex;
+}
+
+.fila > .campo + .campo {
+  margin-left: 15px;
+}
+
+.formulario .boton {
+  width: 100%;
+  background-color: #1e4d8c;
+  color: #ffffff;
+}
+
+.formulario .boton:hover {
+  background-color: #3b82c4;
+}
+
+/* ===== Pie de pagina ===== */
+.pie {
+  background-color: #12263f;
+  color: #ffffff;
+  padding: 35px 20px 15px;
+}
+
+.pie-contenido {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.pie-contenido > section {
+  margin: 10px 20px;
+}
+
+.pie h3 {
+  color: #cfe0f5;
+  margin-bottom: 8px;
+}
+
+.derechos {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 13px;
+  color: #cfe0f5;
+}
+
+/* ===== Responsivo: tablet ===== */
+@media (max-width: 900px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .menu > li {
+    margin-left: 15px;
+  }
+
+  .banner h1 {
+    font-size: 30px;
+  }
+}
+
+/* ===== Responsivo: celular ===== */
+@media (max-width: 700px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .menu > li {
+    margin: 5px 10px;
+  }
+
+  .banner {
+    padding: 45px 20px;
+  }
+
+  .banner h1 {
+    font-size: 26px;
+  }
+
+  .doctor {
+    flex-direction: column;
+    text-align: center;
+    margin: 0 20px;
+  }
+
+  .avatar {
+    margin: 0 0 15px 0;
+  }
+
+  .fila {
+    flex-direction: column;
+  }
+
+  .fila > .campo + .campo {
+    margin-left: 0;
+  }
+
+  .pie-contenido {
+    flex-direction: column;
+    text-align: center;
+  }
+}

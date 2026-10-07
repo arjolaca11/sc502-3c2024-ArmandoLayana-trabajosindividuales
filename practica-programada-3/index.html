@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Clínica Salud: sistema web para reservar citas médicas en línea.">
+  <title>Clínica Salud - Reservación de citas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="encabezado" id="inicio">
+    <nav class="navbar">
+      <h2 class="logo">Clínica Salud</h2>
+      <ul class="menu">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#doctor">Nuestro doctor</a></li>
+        <li><a href="#reservacion">Reservar cita</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <div class="banner">
+      <h1>Cuidamos su salud, reserve su cita en línea</h1>
+      <p>Atención médica profesional, puntual y cercana. Elija la fecha que mejor le convenga y reserve en menos de un minuto.</p>
+      <a class="boton" href="#reservacion">Reservar ahora</a>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="servicios" id="servicios">
+      <h2>Nuestros servicios</h2>
+      <p class="intro">Todo lo que necesita para el cuidado de su corazón en un solo lugar.</p>
+      <div class="tarjetas">
+        <article class="tarjeta">
+          <h3>Consulta general</h3>
+          <p>Valoración completa de su estado de salud con un plan de seguimiento personalizado.</p>
+        </article>
+        <article class="tarjeta">
+          <h3>Electrocardiograma</h3>
+          <p>Estudio rápido y sin dolor para revisar el ritmo y la actividad del corazón.</p>
+        </article>
+        <article class="tarjeta">
+          <h3>Presión arterial</h3>
+          <p>Control periódico de la presión arterial con recomendaciones claras.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="doctor" id="doctor">
+      <div class="avatar">AL</div>
+      <div class="doctor-info">
+        <h2>Dr. Armando Layana Camacho</h2>
+        <h3>Cardiología</h3>
+        <p>Más de 10 años de experiencia en el cuidado del corazón. Egresado de la Universidad de Costa Rica.</p>
+        <p><b>Horario de atención:</b> lunes a viernes, de 8:00 AM a 5:00 PM.</p>
+      </div>
+    </section>
+
+    <section class="reservacion" id="reservacion">
+      <h2>Reservar una cita</h2>
+      <p class="intro">Complete el formulario y nos pondremos en contacto para confirmar su cita.</p>
+
+      <form action="#" method="post" class="formulario">
+        <fieldset>
+          <legend>Datos de la reservación</legend>
+
+          <div class="campo">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ej. María Rodríguez" required>
+          </div>
+
+          <div class="campo">
+            <label for="contacto-cliente">Contacto (correo o teléfono)</label>
+            <input type="text" id="contacto-cliente" name="contacto" placeholder="Ej. 8888-8888" required>
+          </div>
+
+          <div class="fila">
+            <div class="campo">
+              <label for="fecha">Fecha de la cita</label>
+              <input type="date" id="fecha" name="fecha" required>
+            </div>
+
+            <div class="campo">
+              <label for="personas">Número de personas</label>
+              <input type="number" id="personas" name="personas" min="1" value="1" required>
+            </div>
+          </div>
+
+          <div class="campo">
+            <label for="comentarios">Comentarios</label>
+            <textarea id="comentarios" name="comentarios" rows="4" placeholder="Cuéntenos el motivo de su consulta"></textarea>
+          </div>
+
+          <button type="submit" class="boton">Reservar cita</button>
+        </fieldset>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="pie" id="contacto">
+    <div class="pie-contenido">
+      <section>
+        <h3>Clínica Salud</h3>
+        <p>Cuidando su corazón desde hace más de 10 años.</p>
+      </section>
+      <section>
+        <h3>Contacto</h3>
+        <p>Teléfono: 2222-2222</p>
+        <p>Correo: correo@clinica.com</p>
+      </section>
+      <section>
+        <h3>Horario</h3>
+        <p>Lunes a viernes</p>
+        <p>8:00 AM - 5:00 PM</p>
+      </section>
+    </div>
+    <p class="derechos">&copy; 2026 Clínica Salud. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>

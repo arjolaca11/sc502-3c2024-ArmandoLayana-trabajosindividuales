@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Clinica Salud - Reservacion de citas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header id="inicio">
+    <nav class="navbar">
+      <h2 class="logo">Clinica Salud</h2>
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#perfil">Perfil del Doctor</a></li>
+        <li><a href="#reservacion">Reservar cita</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="servicios" class="servicios">
+      <h2>Servicios</h2>
+      <p>Consulta general, electrocardiograma y control de presion arterial.</p>
+    </section>
+
+    <section id="perfil" class="perfil">
+      <div class="avatar">AL</div>
+      <div class="info">
+        <h1 class="doctor-nombre">Dr. Armando Layana Camacho</h1>
+        <h2 class="doctor-especialidad">Cardiologia</h2>
+        <p id="descripcion">Más de 10 años de experiencia en el cuidado del corazon.</p>
+        <p id="horario"><b>Horario de atención:</b> Lunes a Viernes, 8:00 AM - 5:00 PM</p>
+        <p id="educacion"><b>Educación:</b> Universidad de Costa Rica.</p>
+        <a class="btn" href="#reservacion">Agendar cita</a>
+      </div>
+    </section>
+
+    <section id="reservacion" class="reservacion">
+      <h2>Reservar cita</h2>
+      <form id="form-reservacion" novalidate>
+        <div class="campo">
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre">
+          <span class="error" id="error-nombre"></span>
+        </div>
+
+        <div class="campo">
+          <label for="contacto-cliente">Contacto (correo o telefono)</label>
+          <input type="text" id="contacto-cliente" name="contacto">
+          <span class="error" id="error-contacto-cliente"></span>
+        </div>
+
+        <div class="campo">
+          <label for="fecha">Fecha de la cita</label>
+          <input type="date" id="fecha" name="fecha">
+          <span class="error" id="error-fecha"></span>
+        </div>
+
+        <div class="campo">
+          <label for="personas">Numero de personas</label>
+          <input type="number" id="personas" name="personas">
+          <span class="error" id="error-personas"></span>
+        </div>
+
+        <div class="campo">
+          <label for="comentarios">Comentarios</label>
+          <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+          <span class="error" id="error-comentarios"></span>
+        </div>
+
+        <button type="submit" class="btn-enviar">Reservar</button>
+      </form>
+
+      <div id="confirmacion" class="confirmacion"></div>
+    </section>
+
+    <section class="comentarios">
+      <h2>Comentarios de pacientes</h2>
+      <div class="cards">
+        <article class="card">
+          <h3 class="paciente">Maria Rodriguez</h3>
+          <p class="comentario">Excelente atencion, muy profesional.</p>
+          <p class="fecha">12 de marzo</p>
+        </article>
+        <article class="card">
+          <h3 class="paciente">Carlos Mora</h3>
+          <p class="comentario">Me explicó todo con mucha claridad.</p>
+          <p class="fecha">3 de abril</p>
+        </article>
+        <article class="card">
+          <h3 class="paciente">Ana Solano</h3>
+          <p class="comentario">Muy recomendada, puntual y amable.</p>
+          <p class="fecha">20 de mayo</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contacto">
+    <p>Telefono: 2222-2222 | correo@clinica.com</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

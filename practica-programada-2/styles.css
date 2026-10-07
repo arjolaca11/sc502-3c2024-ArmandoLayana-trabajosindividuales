@@ -1,0 +1,262 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Tahoma, sans-serif;
+}
+
+body {
+  background-color: #e8f1fb;
+  color: #2b3a4a;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e4d8c;
+  padding: 15px 30px;
+}
+
+.logo {
+  color: #ffffff;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+
+.nav-links > li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: #3b82c4;
+}
+
+/* Seccion de servicios */
+.servicios {
+  padding: 30px;
+  text-align: center;
+}
+
+
+.servicios h2 + p {
+  margin-top: 10px;
+}
+
+
+.perfil {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  margin: 20px auto;
+  padding: 25px;
+  width: 80%;
+  border: 3px solid #1e4d8c;
+  border-radius: 10px;
+}
+
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  background-color: #3b82c4;
+  color: #ffffff;
+  font-size: 40px;
+  text-align: center;
+  line-height: 120px;
+  border-radius: 50%;
+  margin-right: 25px;
+}
+
+.doctor-nombre {
+  color: #1e4d8c;
+}
+
+.doctor-especialidad {
+  color: #3b82c4;
+  margin-bottom: 10px;
+}
+
+#descripcion {
+  margin-bottom: 15px;
+}
+
+#horario {
+  margin-bottom: 15px;
+}
+
+#educacion {   
+  margin-bottom: 15px; 
+}
+
+a[href^="#r"].btn {
+  display: inline-block;
+  background-color: #1e4d8c;
+  color: #ffffff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+a[href^="#r"].btn:hover {
+  background-color: #3b82c4;
+}
+
+
+.comentarios {
+  padding: 30px;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.cards > .card {
+  background-color: #ffffff;
+  width: 260px;
+  margin: 15px;
+  padding: 20px;
+  border: 2px solid #3b82c4;
+  border-radius: 8px;
+}
+
+.card:hover {
+  background-color: #e8f1fb;
+}
+
+.paciente {
+  color: #1e4d8c;
+}
+
+
+.paciente ~ p {
+  margin-top: 8px;
+}
+
+.fecha {
+  font-size: 12px;
+  color: #666666;
+}
+
+footer {
+  background-color: #1e4d8c;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Seccion de reservacion */
+.reservacion {
+  padding: 30px;
+  text-align: center;
+}
+
+#form-reservacion {
+  background-color: #ffffff;
+  width: 80%;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 25px;
+  border: 3px solid #1e4d8c;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.campo {
+  margin-bottom: 15px;
+}
+
+.campo label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.campo input,
+.campo textarea {
+  width: 100%;
+  padding: 8px;
+  border: 2px solid #3b82c4;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.campo input.invalido,
+.campo textarea.invalido {
+  border-color: #c0392b;
+}
+
+.error {
+  display: block;
+  color: #c0392b;
+  font-size: 13px;
+  margin-top: 4px;
+  min-height: 16px;
+}
+
+.btn-enviar {
+  background-color: #1e4d8c;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-enviar:hover {
+  background-color: #3b82c4;
+}
+
+.confirmacion {
+  width: 80%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.confirmacion.exito {
+  background-color: #ffffff;
+  padding: 20px;
+  border: 3px solid #2e8b57;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.confirmacion h3 {
+  color: #2e8b57;
+  margin-bottom: 10px;
+}
+
+
+@media (max-width: 700px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .perfil {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .avatar {
+    margin: 0 0 15px 0;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
